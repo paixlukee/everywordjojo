@@ -1,1 +1,5 @@
-RIP @fuckeveryword. Long live @fckeveryword.
+https://twitter.com/everywordjojo
+
+
+
+soon

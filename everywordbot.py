@@ -18,7 +18,7 @@ class EverywordBot(object):
 			return 0
 		with open(self.index_file_name) as index_fh:
 			print(index_fh.read().strip())
-			return str(index_fh.read().strip())
+			return int(index_fh.read().strip())
 
 	def _increment_index(self, index):
 		with open(self.index_file_name, "w") as index_fh:

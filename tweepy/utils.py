@@ -6,7 +6,7 @@ from datetime import datetime
 import time
 import re
 import locale
-from urllib import quote
+from aiohttp import quote
 from email.utils import parsedate
 
 

@@ -44,7 +44,7 @@ def get_current_line(index):
 	with open("words.txt") as source_fh:
 		for i in range(index+1):
 			status_str = source_fh.readline().strip()
-		return "fuck " + status_str
+		return status_str + " is a JoJo Reference"
 
 class MainHandler(webapp2.RequestHandler):
 	def get(self):
@@ -54,7 +54,7 @@ class MainHandler(webapp2.RequestHandler):
 		if users.get_current_user():
 			url = users.create_logout_url(self.request.uri)
 			url_linktext = 'Hello, ' + user.nickname() + '. Logout'
-			if user.nickname() == "anka.213" or user.nickname() == "test@example.com":
+			if user.nickname() == "paixlukee": #or user.nickname() == "test@example.com":
 				disabled = ""
 			else:
 				disabled = "disabled"

@@ -34,7 +34,7 @@ class EverywordBot(object):
 	
 	def post(self):
 		index = self._get_current_index()
-		status_str = "fuck " + self._get_current_line(index)
+		status_str = self._get_current_line(index) + " is a JoJo Reference"
 		self.twitter.update_status(status_str)
 		self._increment_index(index)
 
